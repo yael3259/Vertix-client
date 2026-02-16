@@ -75,7 +75,6 @@ export const Feed = () => {
 
         getAllPosts(currentPage, 15)
             .then((res) => {
-                console.log("res", res.data);
                 const postsWithFlag = res.data.map(post => ({
                     ...post,
                     showComments: false,
